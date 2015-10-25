@@ -55,3 +55,17 @@ Use gsub function for pattern replacement to clean up the data labels.
 ### Section 5. Create a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 Per the project instructions, we need to produce only a data set with the average of each veriable for each activity and subject
+
+### Variables
+
+XTrain, YTrain, XTest, YTest, SubjectTrain and SubjectTest contain the data from the downloaded files.
+
+XData, YData and SubjectData merge the previous datasets to further analysis.
+
+Features contains the correct names for the XData dataset, which are applied to the column names stored in ExtractFeatures, a numeric vector used to extract the desired data.
+
+A similar approach is taken with activity names through the Activities variable.
+
+AllData merges XData, YData and SubjectData in a big dataset.
+
+Finally, AveragesData contains the relevant averages which will be later stored in a .txt file. 
